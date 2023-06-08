@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class RabbitConfiguration {
+public class RabbitMQConfig {
 
     @Bean
     public ConnectionFactory connectionFactory(){

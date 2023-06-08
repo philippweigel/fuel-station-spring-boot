@@ -2,37 +2,27 @@ package com.example.fuelstationspringbootapplication.model;
 
 public class Invoice {
 
-    private Integer id;
-    private Integer customerId;
-    private Double amountConsumedInKWh;
+    private String downloadLink;
+    private String creationTime;
 
-    public Invoice(Integer id, Integer customerId, Double amountConsumedInKWh) {
-        this.id = id;
-        this.customerId = customerId;
-        this.amountConsumedInKWh = amountConsumedInKWh;
+    public Invoice(String downloadLink, String creationTime) {
+        this.downloadLink = downloadLink;
+        this.creationTime = creationTime;
     }
 
-    public Integer getId() {
-        return id;
+    public String getDownloadLink() {
+        return downloadLink;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setDownloadLink(String downloadLink) {
+        this.downloadLink = downloadLink;
     }
 
-    public Integer getCustomerId() {
-        return customerId;
+    public String getCreationTime() {
+        return creationTime;
     }
 
-    public void setCustomerId(Integer customerId) {
-        this.customerId = customerId;
-    }
-
-    public Double getAmountConsumedInKWh() {
-        return amountConsumedInKWh;
-    }
-
-    public void setAmountConsumedInKWh(Double amountConsumedInKWh) {
-        this.amountConsumedInKWh = amountConsumedInKWh;
+    public void setCreationTime(String creationTime) {
+        this.creationTime = creationTime;
     }
 }
