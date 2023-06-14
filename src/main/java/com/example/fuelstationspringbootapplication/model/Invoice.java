@@ -10,6 +10,9 @@ public class Invoice {
         this.creationTime = creationTime;
     }
 
+    public Invoice() {
+    }
+
     public String getDownloadLink() {
         return downloadLink;
     }
